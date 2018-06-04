@@ -11,3 +11,4 @@ pipeline:
     user: ${JENKINS_USER}
     token: ${JENKINS_TOKEN}
     job: some-job
+    secrets: [ jenkins_host, jenkins_user, jenkins_token ]
