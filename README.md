@@ -16,7 +16,7 @@ Now, get the OAuth credentials:
 ### Add credentials to environment variables
 Set environment variables in `.env`:
 
-```
+```bash
 JENKINS_PORT=xxxx
 DRONE_PORT=yyyy
 DRONE_ADMIN=some,admins
@@ -44,7 +44,7 @@ To configure Jenkins, go to your Jenkins host and use the password provided from
 ### Make Drone CI start a Jenkins job
 Drone CI has a plugin called `Jenkins`, that sends a request to execute a job on a Jenkins server. To use this in drone, add this to the `.drone.yml`:
 
-```yml
+```diff
 pipeline:
   ...
 + poke-jenkins:
