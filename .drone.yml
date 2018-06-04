@@ -7,8 +7,5 @@ pipeline:
 
   poke-jenkins:
     image: appleboy/drone-jenkins
-    url: ${JENKINS_HOST}
-    user: ${JENKINS_USER}
-    token: ${JENKINS_TOKEN}
     job: some-job
     secrets: [ jenkins_host, jenkins_user, jenkins_token ]
