@@ -10,5 +10,3 @@ pipeline:
     url: ${JENKINS_HOST}
     token: ${JENKINS_TOKEN}
     job: some-job
-    when:
-      status: [ success ]

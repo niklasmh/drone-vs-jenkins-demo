@@ -16,9 +16,6 @@ Set environment variables in `.env`:
 
 ```
 JENKINS_PORT=xxxx
-JENKINS_HOST=<schema>://<jenkinshost>
-JENKINS_USER=root
-JENKINS_TOKEN=sometoken
 DRONE_PORT=yyyy
 DRONE_ADMIN=some,admins
 DRONE_HOST=<schema>://<dronehost>
