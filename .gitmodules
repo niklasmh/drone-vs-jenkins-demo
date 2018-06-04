@@ -1,0 +1,3 @@
+[submodule "ssh-tunnel"]
+	path = ssh-tunnel
+	url = https://github.com/niklasmh/ssh-tunnel.git
