@@ -9,5 +9,5 @@ pipeline:
     image: appleboy/drone-jenkins
     url: http://jenkins.ndc2018.niklasmh.no
     user: admin
-    token: asdiueiuwheuidhweiud
+    token: ac26bc7f945202144530768bdcb11c69
     job: some-job
