@@ -58,3 +58,12 @@ You also need to add some secrets to the Drone CI server. Go to the project > se
 - jenkins_user = admin-id (Found by clicking the user > configure > Show API Token)
 - jenkins_token = API token (Found by clicking the user > configure > Show API Token)
 - jenkins_job = what-you-called-the-job
+
+### Make Jenkins respond by trigger the last Drone CI build
+Go to the Jenkins `Execute shell` step and add:
+
+```diff
++ ./run-drone-job.sh
+```
+
+This also requires credentials for the Drone CI client. In the Jenkins job configuration, check `Use secret text(s) or file(s)` in `Build Environment`. Add a `Secret text` and call it `DRONE_CLIENT`. Click Add > Jenkins > Select `Secret text` in Kind and add the Drone CI client `Token` found in the hamburger menu in Drone CI (`<schema>://<dronehost>/account/token`).
