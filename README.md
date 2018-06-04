@@ -67,3 +67,7 @@ Go to the Jenkins `Execute shell` step and add:
 ```
 
 This also requires credentials for the Drone CI client. In the Jenkins job configuration, check `Use secret text(s) or file(s)` in `Build Environment`. Add a `Secret text` and call it `DRONE_CLIENT`. Click Add > Jenkins > Select `Secret text` in Kind and add the Drone CI client `Token` found in the hamburger menu in Drone CI (`<schema>://<dronehost>/account/token`).
+
+### Enjoy your infinite build loop
+
+:sunglasses:
