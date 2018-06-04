@@ -1,0 +1,14 @@
+pipeline:
+
+  build:
+    image: ubuntu:16.04
+    commands:
+      - ./test.sh
+
+  poke-jenkins:
+    image: appleboy/drone-jenkins
+    url: ${JENKINS_HOST}
+    token: ${JENKINS_TOKEN}
+    job: some-job
+    when:
+      status: [ success ]
