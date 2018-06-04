@@ -7,6 +7,7 @@ pipeline:
 
   poke-jenkins:
     image: appleboy/drone-jenkins
-    url: ${JENKINS_HOST}
-    token: ${JENKINS_TOKEN}
+    url: http://jenkins.ndc2018.niklasmh.no
+    user: admin
+    token: asdiueiuwheuidhweiud
     job: some-job
