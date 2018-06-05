@@ -7,8 +7,6 @@ services:
     ports:
       - ${JENKINS_PORT:-8080}:8080
       - 50000:50000
-    #environment:
-    #  - JENKINS_ARGS=--prefix=/jenkins
     volumes:
       - ./jenkins_home:/var/jenkins_home:rw
 
