@@ -5,6 +5,6 @@ pipeline:
     commands:
       - ./test.sh
 
-  poke-jenkins:
-    image: appleboy/drone-jenkins
-    secrets: [ jenkins_url, jenkins_user, jenkins_token, jenkins_job ]
+#  poke-jenkins:
+#    image: appleboy/drone-jenkins
+#    secrets: [ jenkins_url, jenkins_user, jenkins_token, jenkins_job ]
