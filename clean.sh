@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Turning off the containers
+docker-compose down
+
 # Clean the jenkins_folder
 rm -rf jenkins_home
 mkdir -p jenkins_home
