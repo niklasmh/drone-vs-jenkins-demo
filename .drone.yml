@@ -4,6 +4,7 @@ pipeline:
     image: ubuntu:16.04
     commands:
       - ./test.sh
+      - echo Finished
 
 #  poke-jenkins:
 #    image: appleboy/drone-jenkins
