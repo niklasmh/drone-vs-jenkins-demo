@@ -4,8 +4,13 @@ pipeline:
     image: ubuntu:16.04
     commands:
       - ./test.sh
-      - echo Finished
 
-#  poke-jenkins:
-#    image: appleboy/drone-jenkins
-#    secrets: [ jenkins_url, jenkins_user, jenkins_token, jenkins_job ]
+  poke-jenkins:
+    image: appleboy/drone-jenkins
+    secrets: [
+      jenkins_url,
+      jenkins_user,
+      jenkins_token,
+      jenkins_job
+    ]
+
