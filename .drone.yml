@@ -13,4 +13,3 @@ pipeline:
       jenkins_token,
       jenkins_job
     ]
-
