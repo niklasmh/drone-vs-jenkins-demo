@@ -5,8 +5,8 @@ pipeline:
     commands:
       - ./test.sh
 
-#  poke-jenkins:
-#    image: appleboy/drone-jenkins
-#    url: http://jenkins.ndc2018.niklasmh.no
-#    user: root
-#    secrets: [ jenkins_token, jenkins_job ]
+  poke-jenkins:
+    image: appleboy/drone-jenkins
+    url: http://jenkins.ndc2018.niklasmh.no
+    user: root
+    secrets: [ jenkins_token, jenkins_job ]
