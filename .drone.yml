@@ -1,5 +1,4 @@
 pipeline:
-
   build:
     image: ubuntu:16.04
     commands:
