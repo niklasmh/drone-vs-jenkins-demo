@@ -5,7 +5,7 @@ pipeline:
     commands:
       - ./test.sh
 
-#  poke-jenkins:
+#   poke-jenkins:
 #    image: appleboy/drone-jenkins
 #    url: http://jenkins2.ndc2018.niklasmh.no
 #    user: root
